@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\carshop"
+    "\\Carmedic",
+    "\\carshop",
+    "\\carshop\\templates"
   ],
-  "SelectedNode": "\\static",
+  "SelectedNode": "\\carshop\\templates\\shop_registration.html",
   "PreviewInSolutionExplorer": false
 }

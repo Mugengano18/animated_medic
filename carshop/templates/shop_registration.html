@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>login Page | CM</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 80%;
+            min-height: 80vh;
+            overflow-x: hidden;
+            margin-left: 5%;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            border: rgb(234, 140, 0);
+        }
+
+        body {
+            display: flex;
+            font-family: 'Lora', serif;
+        }
+
+        .image {
+            background-image: url(/img/hand-with\ \(1\).jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: lighten;
+            flex: 1;
+            border-radius: 1px;
+            margin-left: 100px;
+        }
+
+        .sign-up {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex: 1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 1px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ee9623;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+            color: #000;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 300px;
+            padding: 8px;
+            font-size: 1.1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 100;
+            border-radius: 5px;
+            border: 1px solid rgb(211, 211, 211);
+            outline: none;
+            background-color: rgb(211, 211, 211);
+        }
+
+        input[type="submit"] {
+            background-color: #ee9623;
+            ;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .link a {
+            color: #ee9623;
+            text-decoration: solid;
+            align-self: flex-end;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 786px) {
+            .image {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image"></div>
+    <div class="sign-up">
+        <h1>CAR MEDIC</h1>
+        <div class="icon"><img src="/img/icon.png" alt="" width="50px" ; height="50px"></div>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Company name">
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="Longitude" />
+            <input type="text" placeholder="Latitude" />
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
+</body>
+</html>
