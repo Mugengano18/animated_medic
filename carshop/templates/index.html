@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+          rel="stylesheet" type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <section class="grid grid-cols-2 mx-14 my-14">
+        <div class="navigation">
+            <ul class="flex">
+                <li class="mr-6">
+                    <a class="text-black-500 hover:text-orange-600" href="#">Home</a>
+                </li>
+                <li class="mr-6">
+                    <a class="text-black-500 hover:text-orange-600" href="#">About</a>
+                </li>
+                <li class="mr-6">
+                    <a class="text-black-500 hover:text-orange-600" href="#">Services</a>
+                </li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul class="flex justify-end">
+                <li class="mr-6">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li class="mr-6">
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li class="mr-6">
+                    <a  href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="mr-6">
+                    <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="Intro_page h-96 bg-[url('{% static "images\pictu"%}')]">
+        <div class="Intro_text">
+            <img src="{% static 'images/download.jpeg'%}" alt="Alternate Text" />
+            <h1>Hello,</h1>
+            <h3 class="font-bold">This is Car Medic</h3>
+            <p>Your need help with your car?</p>
+            <a href="#">get Help</a>
+        </div>
+    </section>
+</body>
+</html>
